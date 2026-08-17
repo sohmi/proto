@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Card from '../../../../components/Card';
-import Button from '../../../../components/Button';
+import Card from '../../../components/Card';
+import Button from '../../../components/Button';
 import { Users, FileText, AlertTriangle, Send, ShieldAlert, CheckCircle2 } from 'lucide-react';
 
 export default function AdminDashboard() {

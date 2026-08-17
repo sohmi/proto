@@ -2,8 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import Card from '../../../../components/Card';
-import Button from '../../../../components/Button';
+import Card from '../../../components/Card';
+import Button from '../../../components/Button';
 import { Send, Mic, Volume2, Loader2, ArrowLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 

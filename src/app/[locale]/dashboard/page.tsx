@@ -1,12 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useAppStore } from '../../../../store/appStore';
+import { useAppStore } from '../../../store/appStore';
 import { useEffect, useState } from 'react';
-import Card from '../../../../components/Card';
+import Card from '../../../components/Card';
 import { Bot, FileText, AlertTriangle, Search, Bell } from 'lucide-react';
 import { useRouter, useParams } from 'next/navigation';
-import { supabase } from '../../../../lib/supabase/client';
+import { supabase } from '../../../lib/supabase/client';
 
 export default function Dashboard() {
   const t = useTranslations('Dashboard');
