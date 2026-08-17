@@ -8,7 +8,7 @@ AI Panchayat is a digital village assistant built for rural citizens and Panchay
 *   **Database & Auth:** [Supabase](https://supabase.com/).
 *   **State Management & Offline Storage:** [Zustand](https://github.com/pmndrs/zustand) combined with `idb-keyval` (IndexedDB).
 *   **Styling:** Vanilla CSS (`globals.css`).
-*   **AI Integration:** Google Gemini API (`gemini-1.5-flash`).
+*   **AI Integration:** Managed open-source AI via [Groq](https://groq.com/) using the `llama3-8b-8192` model.
 *   **Internationalization:** `next-intl` for English and Hindi support.
 
 ## Why Supabase?
