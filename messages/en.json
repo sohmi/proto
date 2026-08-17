@@ -1,0 +1,29 @@
+{
+  "Index": {
+    "title": "Welcome to AI Panchayat",
+    "subtitle": "Your digital village assistant",
+    "selectLanguage": "Select your language",
+    "english": "English",
+    "hindi": "हिन्दी (Hindi)"
+  },
+  "Dashboard": {
+    "greeting": "Namaste, {name}",
+    "assistantTitle": "AI Assistant",
+    "assistantDesc": "Ask about schemes or procedures",
+    "requestsTitle": "Document Requests",
+    "requestsDesc": "Apply for certificates",
+    "grievancesTitle": "File a Grievance",
+    "grievancesDesc": "Report issues with water, roads, etc.",
+    "schemesTitle": "Scheme Finder",
+    "schemesDesc": "Find schemes you are eligible for",
+    "noticesTitle": "Notice Board",
+    "offlineNotice": "⚠️ Offline Mode. Showing saved data from {time}."
+  },
+  "Common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back",
+    "logout": "Logout"
+  }
+}

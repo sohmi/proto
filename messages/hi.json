@@ -1,0 +1,29 @@
+{
+  "Index": {
+    "title": "एआई पंचायत में आपका स्वागत है",
+    "subtitle": "आपका डिजिटल ग्राम सहायक",
+    "selectLanguage": "अपनी भाषा चुनें",
+    "english": "English",
+    "hindi": "हिन्दी (Hindi)"
+  },
+  "Dashboard": {
+    "greeting": "नमस्ते, {name}",
+    "assistantTitle": "एआई सहायक",
+    "assistantDesc": "योजनाओं या प्रक्रियाओं के बारे में पूछें",
+    "requestsTitle": "दस्तावेज़ अनुरोध",
+    "requestsDesc": "प्रमाण पत्र के लिए आवेदन करें",
+    "grievancesTitle": "शिकायत दर्ज करें",
+    "grievancesDesc": "पानी, सड़क आदि से संबंधित समस्याओं की रिपोर्ट करें।",
+    "schemesTitle": "योजना खोजक",
+    "schemesDesc": "ऐसी योजनाएँ खोजें जिनके लिए आप पात्र हैं",
+    "noticesTitle": "सूचना पट्ट",
+    "offlineNotice": "⚠️ ऑफ़लाइन मोड। {time} से सहेजा गया डेटा दिखा रहा है।"
+  },
+  "Common": {
+    "loading": "लोड हो रहा है...",
+    "submit": "जमा करें",
+    "cancel": "रद्द करें",
+    "back": "पीछे",
+    "logout": "लॉग आउट"
+  }
+}
