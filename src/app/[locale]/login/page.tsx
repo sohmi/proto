@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { supabase } from '../../../../lib/supabase/client';
-import { useAppStore } from '../../../../store/appStore';
-import Card from '../../../../components/Card';
-import Button from '../../../../components/Button';
+import { supabase } from '../../../lib/supabase/client';
+import { useAppStore } from '../../../store/appStore';
+import Card from '../../../components/Card';
+import Button from '../../../components/Button';
 import { Phone, KeyRound, Loader2 } from 'lucide-react';
 
 export default function Login() {

@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Card from '../../../../components/Card';
-import Button from '../../../../components/Button';
+import Card from '../../../components/Card';
+import Button from '../../../components/Button';
 import { Search, Loader2, ArrowLeft, Heart, CheckCircle2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 

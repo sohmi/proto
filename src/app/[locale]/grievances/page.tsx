@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Card from '../../../../components/Card';
-import Button from '../../../../components/Button';
+import Card from '../../../components/Card';
+import Button from '../../../components/Button';
 import { Camera, MapPin, Loader2, CheckCircle2, ArrowLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { useAppStore } from '../../../../store/appStore';
-import { supabase } from '../../../../lib/supabase/client';
+import { useAppStore } from '../../../store/appStore';
+import { supabase } from '../../../lib/supabase/client';
 
 export default function Grievances() {
   const t = useTranslations('Dashboard');
