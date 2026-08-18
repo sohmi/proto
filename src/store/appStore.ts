@@ -1,22 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 
-// Fallback to localStorage if idb-keyval fails, but idb-keyval is preferred for larger data
-import { get, set, del } from 'idb-keyval';
-
-// Custom storage for Zustand using IndexedDB
-const idbStorage = {
-  getItem: async (name: string): Promise<string | null> => {
-    return (await get(name)) || null;
-  },
-  setItem: async (name: string, value: string): Promise<void> => {
-    await set(name, value);
-  },
-  removeItem: async (name: string): Promise<void> => {
-    await del(name);
-  },
-};
-
 interface User {
   id: string;
   phone: string;
@@ -36,6 +20,12 @@ interface AppState {
   setCachedRequests: (requests: any[]) => void;
 }
 
+const dummyStorage = {
+  getItem: () => null,
+  setItem: () => {},
+  removeItem: () => {},
+};
+
 export const useAppStore = create<AppState>()(
   persist(
     (set) => ({
@@ -50,11 +40,7 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: 'ai-panchayat-storage',
-      storage: createJSONStorage(() => (typeof window !== 'undefined' ? idbStorage : {
-        getItem: () => null,
-        setItem: () => {},
-        removeItem: () => {},
-      } as any)),
+      storage: createJSONStorage(() => (typeof window !== 'undefined' ? window.localStorage : dummyStorage as any)),
     }
   )
 );
