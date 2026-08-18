@@ -50,7 +50,11 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: 'ai-panchayat-storage',
-      storage: createJSONStorage(() => (typeof window !== 'undefined' ? idbStorage : localStorage as any)),
+      storage: createJSONStorage(() => (typeof window !== 'undefined' ? idbStorage : {
+        getItem: () => null,
+        setItem: () => {},
+        removeItem: () => {},
+      } as any)),
     }
   )
 );
